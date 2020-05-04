@@ -1,0 +1,24 @@
+#page {
+    display: flex;
+    flex-direction: column;
+}
+
+#pageNavbar {
+    flex: 3;
+}
+
+#pageNotes {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+#pageFooter {
+    flex: 3;
+}
+
+app-notes {
+    margin: 30px;
+}

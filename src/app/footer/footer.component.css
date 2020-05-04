@@ -1,0 +1,15 @@
+#footer{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffbb00;
+}
+
+.footerLink {
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 20px;
+    text-decoration: none;
+}

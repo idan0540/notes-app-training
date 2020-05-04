@@ -1,0 +1,45 @@
+#navbar {
+    display: flex;
+    margin-bottom: 40px;
+    height: 60px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#title {
+    height: 100%;
+    flex: 12;
+    font-weight: 900;
+    font-size: 35px;
+    color: #000000;
+    padding-right: 40px;
+    background-color: #ffbb00;
+}
+
+#userSession {
+    height: 100%;
+    flex: 3;
+    display: flex;
+}
+
+#userDetails {
+    background-color: #376cff;
+    color: #ffffff;
+    flex: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#userName {
+    font-weight: bold;
+
+}
+
+#logOut {
+    background-color: #ff3131;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
