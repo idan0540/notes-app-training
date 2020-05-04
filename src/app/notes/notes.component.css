@@ -1,5 +1,17 @@
 .note {
-    width: 100px;
-    height: 100px;
-    background-color: coral;
+    width: 220px;
+    height: 180px;
+    border: 3px solid #ffbb00;
+    border-radius: 20px;
+}
+
+.note-title {
+    background-color: #ffbb00;
+    font-weight: bold;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.note-desc {
+    background-color: white;
 }
