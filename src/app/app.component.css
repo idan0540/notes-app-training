@@ -1,14 +1,15 @@
 #page {
     display: flex;
     flex-direction: column;
+    min-height: -webkit-fill-available;
 }
 
 #pageNavbar {
-    flex: 3;
+    /* flex: 3; */
 }
 
 #pageNotes {
-    flex: 3;
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     /* align-items: center; */
@@ -16,9 +17,20 @@
 }
 
 #pageFooter {
-    flex: 3;
+    /* flex: 3; */
 }
 
 app-notes {
-    margin: 30px;
+    margin: 20px;
+}
+
+#newNote {
+    width: 220px;
+    height: 180px;
+    border: 3px solid #ffbb00;
+    border-radius: 20px;
+}
+
+#plusIcon {
+
 }

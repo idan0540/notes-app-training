@@ -1,28 +1,29 @@
 #navbar {
     display: flex;
     margin-bottom: 40px;
-    height: 60px;
-    /* align-items: center; */
-    justify-content: center;
+    height: 50px;
+    justify-content: space-between;
+    background-color: #ffbb00;
 }
 
 #title {
     height: 100%;
     flex: 12;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 25px;
     color: #000000;
     padding-right: 40px;
-    background-color: #ffbb00;
+    display: flex;
+    align-items: center;
 }
 
 #userSession {
-    height: 100%;
-    flex: 3;
+    flex: 4;
     display: flex;
 }
 
 #userDetails {
+    font-size: 12px;
     background-color: #376cff;
     color: #ffffff;
     flex: 8;
@@ -33,7 +34,6 @@
 
 #userName {
     font-weight: bold;
-
 }
 
 #logOut {
@@ -42,4 +42,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#avatar {
+    height: 40%;
+    margin: 5px;
+    opacity: 50%;
+}
+
+#logOutIcon {
+    height: 40%;
+    transform: rotateZ(180deg);
+    opacity: 50%;
 }
