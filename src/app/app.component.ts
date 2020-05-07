@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NotesComponent } from './notes/notes.component';
 
 @Component({
   selector: 'app-root',
@@ -26,9 +27,16 @@ export class AppComponent {
     }
   ];
 
-
+  // item1 = {title: 'new', desc: 'new'};
+  // item = "jki";
   newNote() {
-    console.log("hiiiii");
+
+    // console.log("hiiiii");
+
+    // NotesComponent.caller.apply.notes.push({title: 'new', desc: 'new'});
+    // var nnotes = NotesComponent.arguments("notes");
+    // console.log(nnotes);
+    this.notes.push({title: 'new', desc: 'new'});
     
   }
 }

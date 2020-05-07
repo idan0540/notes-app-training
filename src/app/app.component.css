@@ -29,8 +29,13 @@ app-notes {
     height: 180px;
     border: 3px solid #ffbb00;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 #plusIcon {
-
+    fill:  #ffbb00;;
+    /* width: 90px; */
 }

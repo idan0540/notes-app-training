@@ -3,12 +3,10 @@
         <app-navbar></app-navbar>
     </div>
     <div id="pageNotes">
-        <h1 *ngFor="let note of notes">
-            {{note.title}}
-        </h1>
-        <app-notes *ngFor="let note of notes"></app-notes>
+        <app-notes *ngFor="let note of notes" [fromParent]="note"></app-notes>
+        <!-- <app-notes></app-notes> -->
         <div id="newNote" (click)="newNote()">
-            <svg id="my-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <svg id="plusIcon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                 <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" /></svg>
         </div>
     </div>

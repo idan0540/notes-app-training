@@ -3,10 +3,12 @@
     height: 180px;
     border: 3px solid #ffbb00;
     border-radius: 20px;
+    
 }
 
 .note-title {
     background-color: #ffbb00;
+    width: 218px;
     font-weight: bold;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -17,4 +19,17 @@
 .note-desc {
     background-color: white;
     padding: 5px;
+    width: 210px;
+}
+
+input {
+    border: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder {
+    color: #000000;
 }
