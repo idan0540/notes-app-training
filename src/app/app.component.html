@@ -6,8 +6,9 @@
         <app-notes *ngFor="let note of notes" [fromParent]="note"></app-notes>
         <!-- <app-notes></app-notes> -->
         <div id="newNote" (click)="newNote()">
-            <svg id="plusIcon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" /></svg>
+            <svg id="plusIcon" width="50" height="50" viewBox="0 0 24 24">
+                <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+            </svg>
         </div>
     </div>
     <div id="pageFooter">
