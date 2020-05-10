@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, Input} from '@angular/core';
+import { NotesManagerService } from '../services/notes-manager/notes-manager.service';
 
 @Component({
   selector: 'app-notes',
@@ -7,35 +8,21 @@ import { Component, OnInit, Output, Input} from '@angular/core';
 })
 export class NotesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public notesManager: NotesManagerService) { }
+
+  @Input() noteUid: number;
+  @Input() noteTitle = '';
+  @Input() noteContent = '';
 
   ngOnInit(): void {
+    console.log(this.noteUid);
+    console.log(this.noteTitle);
+    console.log(this.noteContent);
   }
-  
-  @Input('fromParent')
-  nnewNote : Object;
 
-  // notes = [
-  //   {
-  //     title: 'פתק 1',
-  //     desc: 'לשים גרביים'
-  //   },
-  //   {
-  //     title: 'פתק 2',
-  //     desc: 'לנעול נעליים'
-  //   },
-  //   {
-  //     title: 'פתק 3',
-  //     desc: 'לשרוך שרוכים'
-  //   },
-  //   {
-  //     title: 'פתק 4',
-  //     desc: 'ללכת'
-  //   }
-  // ];
-  // newNote() {
-  //   // this.notes.push({title: 'new', desc: 'new'});
-  //   this.notes.push({title: this.nnewNote, desc: this.nnewNote});
-  // }
-  
+  updateNote1() {
+    console.log(this.noteUid);
+    console.log(this.noteTitle);
+    console.log(this.noteContent);
+  }
 }
