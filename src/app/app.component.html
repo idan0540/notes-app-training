@@ -3,7 +3,9 @@
         <app-navbar></app-navbar>
     </div>
     <div id="pageNotes">
-        <app-notes *ngFor="let note of notes" [noteUid]="note.uid" [noteTitle]="note.title" [noteContent]="note.desc"></app-notes>        <div id="newNote" (click)="newNote()">
+        <!-- <app-notes *ngFor="let note of notes" [noteUid]="note.id" [noteTitle]="note.title" [noteContent]="note.desc"></app-notes> -->
+        <app-notes *ngFor="let note of notesManager.notes" [note]="note"></app-notes>
+        <div id="newNote" (click)="newNote()">
             <svg id="plusIcon" width="50" height="50" viewBox="0 0 24 24">
                 <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
             </svg>

@@ -1,7 +1,7 @@
 <div class="note">
-    <input class="note-title" placeholder="הזן כותרת" value="{{noteTitle}}" (change)="updateNote1()">
-    <textarea class="note-desc" placeholder="תוכן הפתק" [value]="noteContent"></textarea>
-    <svg id="deleteIcon" x="0px" y="0px" width="17" height="17" viewBox="0 0 172 172" style=" fill:#000000;">
+    <input class="note-title" placeholder="הזן כותרת" value="{{note.title}}" (change)="notesManager.updateNote(note.title=$event.target.value)">
+    <textarea class="note-desc" placeholder="תוכן הפתק" [value]="note.desc" (change)="notesManager.updateNote(note.desc=$event.target.value)"></textarea>
+    <svg id="deleteIcon" x="0px" y="0px" width="17" height="17" viewBox="0 0 172 172" style=" fill:#000000;" (click)="notesManager.deleteNote(this.note)">
         <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
             stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
             font-size="none" text-anchor="none" style="mix-blend-mode: normal">

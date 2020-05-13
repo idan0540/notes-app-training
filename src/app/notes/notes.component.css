@@ -16,6 +16,14 @@
     padding-right: 5px;
     height: 25px;
 }
+/* :host {
+  width: 220px;
+  transition: width 0.8s ease-out 0.8s;
+}
+
+:host:hover {
+  width: 100px;
+} */
 
 .note-desc {
   border: none;

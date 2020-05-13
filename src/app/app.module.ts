@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NotesComponent } from './notes/notes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { NotesManagerService } from './services/notes-manager/notes-manager.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [NotesManagerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
